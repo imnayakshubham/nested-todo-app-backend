@@ -11,7 +11,7 @@ connectDB()
 
 
 app.use(cors({
-    origin: "https://nested-task-app-frontend-o9bixbu5t-imnayakshubham.vercel.app",
+    origin: "https://nested-task-app-frontend.vercel.app",
 }));
 
 app.use(express.json());
