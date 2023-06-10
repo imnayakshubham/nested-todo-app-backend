@@ -10,10 +10,12 @@ const app = express();
 connectDB()
 
 
-app.use(cors());
+app.use(cors({
+    origin: "https://nested-task-app-frontend-o9bixbu5t-imnayakshubham.vercel.app",
+}));
+
 app.use(express.json());
 app.use(urlencoded({ extended: true }));
-
 app.use("/api/", userRoutes);
 
 
